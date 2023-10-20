@@ -54,13 +54,13 @@ app.get('/test', (req, res) => {
   return res.render('test');
 })
 
-// GET /urls
-// GET /urls/:shortURL
-// POST /urls/
-// GET /urls/:shortURL/edit
-// POST /urls/:shortURL
-// POST /urls/:shortURL/delete
+app.get('/cats', (req,res) => {
+  res.send('cat');
+})
 
+app.get('/dogs', (req,res) => {
+  res.send('dog');
+})
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
