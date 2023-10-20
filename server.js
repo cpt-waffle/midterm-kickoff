@@ -48,6 +48,18 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/cats', (req,res) => {
+  res.send('cat');
+})
+
+app.get('/dogs', (req,res) => {
+  res.send('dog');
+})
+
+
+//////////////////
+//////////////
+//////
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });
